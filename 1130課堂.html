@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品頁面</title>
+    <style>
+        .banner {
+            width: 100%;
+            height: 350px;
+            border: 2px double red;
+            background-image: url(images/bannerdada.jpg);
+            background-size: cover;
+        }
+        
+        .nav {
+            width: 100%;
+            height: 60px;
+            border: 2px double red;
+            margin-top: 20px;
+        }
+        
+        .pro1 {
+            opacity: 0.5;
+        }
+        
+        .pro1:hover {
+            opacity: 1;
+        }
+        
+        .main {
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "left center right";
+            position: relative;
+            top: 40px;
+        }
+        
+        .m-left {
+            grid-area: left;
+        }
+        
+        .m-center {
+            grid-area: center;
+        }
+        
+        .m-right {
+            grid-area: right;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 100px;
+            border: 2px double black;
+            font-size: 8px;
+            font-weight: bold;
+            position: relative;
+            top: 50px;
+        }
+        
+        @media screen and (max-width:600px) {
+            .nav {
+                display: none;
+            }
+            .main figure {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+    </div>
+
+    <nav> class="nav">
+        <span class="pro1">1.上市首月特價</span><br>
+        <span class="pro1">2.新品上市,敬請期待.....</span>
+    </nav>
+
+    <main class="main">
+        <div class="m-left">
+            <img src="images/prod-01.jpg" alt="美白面膜">
+            <figcaption>
+                <span>白美面膜</span><br>
+                <span>原價<s>NT1000</s></span><br>
+                <span>特價NT$800</span>
+            </figcaption>
+    </main>
+    <div class="m-center">
+        <img src="images/prod-02.jpg" alt="玫瑰護手霜">
+        <div class="product">
+            <figcaption>
+                <span>玫瑰護手霜</span><br>
+                <span>原價<s>NT500</s></span><br>
+                <span>特價NT$300</span>
+            </figcaption>
+        </div>
+
+    </div>
+    <div class="m-right">
+        <img src="images/prod-03.jpg" alt="廣藿香按摩油">
+        <figcaption>
+            <span>藿香按摩油</span><br>
+            <span>原價<s>NT900</s></span><br>
+            <span>特價NT$500</span>
+        </figcaption>
+
+    </div>
+
+    <footer class="footer2">
+        <footer2>
+            <ul>
+                <li>
+                    <p>勞動部勞動力發展署台灣就業通客服中心</p>
+                    <p>客服專線：0800-777-888 傳真：02-77335388</p>
+                    <p>服務時間：週一至週五（不含國定假日）08:30~18:30</p>
+                    <p>網頁瀏覽器建議使用Google Chrome 58.0.0以上版本，最佳瀏覽解析度為1920x1080以上。</p>
+                    <p>本網站為為勞動力發展署版權所有90</p>
+                </li>
+                <li class=><a href="#">服務據點</a></li>
+            </ul>
+        </footer2>
+    </footer>
+
+    </footer>
+</body>
+
+</html>
